@@ -18,6 +18,8 @@ public class Parcel {
     Date sendParcelDate;
     ParcelStatus parcelStatus = SEND;
     String senderName = "NO";
+
+    
 //Location location
 
     //constructor
