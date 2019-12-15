@@ -1,18 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UI.AddParcelsActivity.MainActivity">
+    android:orientation="vertical"
+    tools:context=".UI.AddParcelsActivity.MainActivity"
+    android:background="@drawable/photo_java_postier">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="710dp"
+        android:layout_marginBottom="76dp"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="340dp"
+            android:layout_height="37dp"
+            android:layout_gravity="center|right"
+            android:layout_marginStart="104dp"
+            android:text="Please fill the following fields"
+            android:textColor="#FF000000"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="sender's field"
+            android:textColor="#FF000000"
+            android:textStyle="italic" />
+
+
+        <EditText
+            android:id="@+id/sender_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Receptor's fields"
+            android:textColor="#030000"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/receptor_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="name" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="postal address"
+            android:inputType="textPostalAddress" />
+
+        <EditText
+            android:id="@+id/phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:id="@+id/expedition_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="date"
+            android:hint="expedition date" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parcel's fields"
+            android:textColor="#070000"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/parcel_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="parcel id"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <CheckBox
+            android:id="@+id/fragile_or_not"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragile" />
+
+        <Spinner
+            android:id="@+id/parcel_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog"
+            android:text="select parcel type"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <Spinner
+            android:id="@+id/parcel_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="select parcel weight" />
+
+        <Spinner
+            android:id="@+id/parcel_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="select parcel status" />
+
+        <Button
+            android:id="@+id/Add_parcel"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:backgroundTint="#FFEB3B"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Add parcel" />
+
+        <Button
+            android:id="@+id/History_parcels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F5F5F5"
+            android:backgroundTint="#FFFEFD"
+            android:clickable="true"
+            android:ellipsize="none"
+            android:text="History parcels"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColorHighlight="#C1666060"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="311dp"
+            android:layout_height="26dp"
+            android:layout_margin="50dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="150dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

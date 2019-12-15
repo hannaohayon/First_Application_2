@@ -5,13 +5,13 @@ import android.app.DatePickerDialog;
 public class Receptor {
     private String Address;
     private String Name;
-    private double PhoneNumber;
+    private String PhoneNumber;
     private DatePickerDialog ReceiveDateParcel;
     private String Email;
 
     //getter and setter
-    public void setPhoneNumber(double phoneNumber) { PhoneNumber = phoneNumber; }
-    public double getPhoneNumber() { return PhoneNumber; }
+    public void setPhoneNumber(String phoneNumber) { PhoneNumber = phoneNumber; }
+    public String getPhoneNumber() { return PhoneNumber; }
 
     public String getName() {
         return Name;
@@ -38,11 +38,17 @@ public class Receptor {
 
 
     //constructor
-    public Receptor(String address, String name, double phoneNumber, DatePickerDialog receiveDateParcel, String email) {
+    public Receptor(){} //pour main activity
+
+    public Receptor(String address, String name, String phoneNumber, DatePickerDialog receiveDateParcel, String email) {
         Address = address;
         Name=name;
         PhoneNumber = phoneNumber;
         ReceiveDateParcel= receiveDateParcel;
         Email=email;
     }
+
+
+
+
 }
