@@ -19,7 +19,7 @@ public class Parcel {
     ParcelStatus parcelStatus = SEND;
     String senderName = "NO";
 
-    
+
 //Location location
 
     //constructor
